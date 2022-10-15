@@ -42,9 +42,9 @@
 
     <!-- note taker panel -->
     <div class="accordion" id="note-input-panel">
-        <div class="accordion-item">
+        <div class="accordion-item" style="border-radius: 20px;">
             <h2 class="accordion-header" id="headingOne">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                <button class="accordion-button" style="border-radius: 20px;" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
                     aria-expanded="false" aria-controls="collapseOne">
                     Take Note
                 </button>
@@ -56,6 +56,22 @@
                          and saves the note when form is submitted -->
                     <!-- Ensure validations are applied to prevent form from 
                         submitting if the inputs are invalid -->
+                        <form onsubmit="return validateForm()">
+                        <label for="title">Enter Title</label>
+                        <br>
+                        <input type="text" id="titleName" placeholder="Enter title">
+                                    <span id="titlespan" style="color: rgb(131, 41, 41);"></span>
+                                    <br><br>
+                        <label for="notes">Enter your Note</label>
+                        <br>
+                        <input type="text" , id = notesName placeholder="Enter Note">
+                                    <span id="notespan " style="color: rgb(101, 126, 77);" ></span>
+                                    <br><br>
+                       <input type="submit" value="Add" style="border-radius: 10px;">
+                       <br><br>
+                        </form>
+                        <button onclick="displayNotes()" style="border-radius: 5px;">Display notes</button>
+                        <script src="./js/script.js"></script>
                 </div>
             </div>
         </div>

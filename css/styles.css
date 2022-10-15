@@ -11,3 +11,13 @@
     flex-wrap: wrap;
     /* justify-content: space-around; */
 }
+
+body{
+    background-color: rgb(149, 206, 173);
+}
+.accordion-button{
+    border-radius: 10px;
+}
+.collapseOne{
+    border-radius: px;
+}
